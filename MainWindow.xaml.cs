@@ -77,7 +77,7 @@ namespace RecipeAppGUI
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = this; // Set the DataContext to this Window instance
+            DataContext = this;
 
             _recipes = new List<Recipe>();
             _ingredients = new List<Ingredient>();
