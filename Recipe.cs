@@ -18,7 +18,7 @@ namespace RecipeAppGUI
             Ingredients = ingredients;
             Steps = steps;
         }
-
+        //accessor for calories
         public double GetTotalCalories()
         {
             return Ingredients.Sum(i => i.Calories);
