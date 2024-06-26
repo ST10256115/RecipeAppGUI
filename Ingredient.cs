@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace RecipeAppGUI
-{
+{//this class saves and works with ingredients
     public class Ingredient
     {
         public string Name { get; set; }
