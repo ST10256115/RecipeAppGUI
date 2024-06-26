@@ -1,0 +1,85 @@
+﻿<Window x:Class="RecipeAppGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Recipe App" Height="700" Width="900">
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\User\OneDrive\Desktop\2024\FoodBackground.jpg" />
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Recipe Input Section -->
+        <StackPanel Grid.Row="0" Grid.Column="0" Margin="10">
+            <TextBlock Text="Enter New Recipe" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+
+            <Label Content="Recipe Name:"/>
+            <TextBox x:Name="RecipeNameTextBox" Width="300" Margin="0,0,0,10" Text="{Binding RecipeName}"/>
+
+            <TextBlock Text="Ingredients" FontWeight="Bold" Margin="0,10,0,5"/>
+
+            <Label Content="Ingredient Name:"/>
+            <TextBox x:Name="IngredientNameTextBox" Width="300" Margin="0,0,0,5" Text="{Binding IngredientName}"/>
+
+            <Label Content="Quantity:"/>
+            <TextBox x:Name="IngredientQuantityTextBox" Width="300" Margin="0,0,0,5" Text="{Binding IngredientQuantity}"/>
+
+            <Label Content="Unit (e.g., grams, cups):"/>
+            <TextBox x:Name="IngredientUnitTextBox" Width="300" Margin="0,0,0,5" Text="{Binding IngredientUnit}"/>
+
+            <Label Content="Calories:"/>
+            <TextBox x:Name="IngredientCaloriesTextBox" Width="300" Margin="0,0,0,5" Text="{Binding IngredientCalories}"/>
+
+            <Label Content="Food Group:"/>
+            <TextBox x:Name="IngredientFoodGroupTextBox" Width="300" Margin="0,0,0,5" Text="{Binding IngredientFoodGroup}"/>
+
+            <Button x:Name="AddIngredientButton" Content="Add Ingredient" Width="200" Margin="0,5,0,10" Click="AddIngredientButton_Click"/>
+
+            <TextBlock Text="Steps" FontWeight="Bold" Margin="0,10,0,5"/>
+
+            <Label Content="Step Description:"/>
+            <TextBox x:Name="StepTextBox" Width="300" Margin="0,0,0,5" Text="{Binding StepDescription}"/>
+
+            <Button x:Name="AddStepButton" Content="Add Step" Width="200" Margin="0,5,0,10" Click="AddStepButton_Click"/>
+
+            <Button Content="Save Recipe" Width="200" Margin="0,10,0,0" Click="SaveRecipeButton_Click"/>
+        </StackPanel>
+
+        <!-- Recipe Display and Filter Section -->
+        <StackPanel Grid.Row="0" Grid.Column="1" Margin="10">
+            <TextBlock Text="Recipe Filter" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+
+            <Label Content="Filter by Ingredient:"/>
+            <TextBox x:Name="IngredientFilterTextBox" Width="300" Margin="0,0,0,10"/>
+
+            <Label Content="Filter by Food Group:"/>
+            <ComboBox x:Name="FoodGroupComboBox" Width="300" Margin="0,0,0,10">
+                <ComboBoxItem Content="All"/>
+                <ComboBoxItem Content="Carbohydrate"/>
+                <ComboBoxItem Content="Vegetable"/>
+                <ComboBoxItem Content="Protein"/>
+                <ComboBoxItem Content="Dairy"/>
+                <ComboBoxItem Content="Fruit"/>
+                <ComboBoxItem Content="Fat"/>
+            </ComboBox>
+
+            <Label Content="Max Calories:"/>
+            <TextBox x:Name="MaxCaloriesTextBox" Width="300" Margin="0,0,0,10"/>
+
+            <Button Content="Apply Filter" Width="200" Margin="0,5,0,20" Click="FilterButton_Click"/>
+
+            <TextBlock Text="Recipes" FontWeight="Bold" Margin="0,10,0,5"/>
+            <ListBox x:Name="RecipeListBox" Width="300" Height="200" SelectionChanged="RecipeListBox_SelectionChanged"/>
+        </StackPanel>
+
+        <!-- Recipe Details Section -->
+        <ScrollViewer Grid.Row="1" Grid.ColumnSpan="2" Margin="10">
+            <TextBlock x:Name="RecipeDetailsTextBlock" TextWrapping="Wrap" Background="White" Opacity="0.8"/>
+        </ScrollViewer>
+    </Grid>
+</Window>

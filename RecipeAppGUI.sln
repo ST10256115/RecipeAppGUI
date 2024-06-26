@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeAppGUI", "RecipeAppGUI.csproj", "{CA68958C-277A-4518-9655-DE9D9D60FE94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{4292F4D5-088F-494C-9022-B74123416E6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA68958C-277A-4518-9655-DE9D9D60FE94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA68958C-277A-4518-9655-DE9D9D60FE94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA68958C-277A-4518-9655-DE9D9D60FE94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA68958C-277A-4518-9655-DE9D9D60FE94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F02CE825-DA14-4077-BD66-A9085615AFEF}
+	EndGlobalSection
+EndGlobal
