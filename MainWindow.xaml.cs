@@ -239,7 +239,7 @@ namespace RecipeAppGUI
 
             UpdateRecipeListBox(filteredRecipes);
         }
-
+        //method to update list box
         private void UpdateRecipeListBox(List<Recipe> recipes)
         {
             RecipeListBox.Items.Clear();
