@@ -22,7 +22,7 @@ namespace RecipeAppGUI
             Calories = calories;
             FoodGroup = foodGroup;
         }
-
+        //to string to display details contained in class
         public override string ToString()
         {
             return $"{Quantity} {Unit} of {Name} ({Calories} calories, {FoodGroup})";
