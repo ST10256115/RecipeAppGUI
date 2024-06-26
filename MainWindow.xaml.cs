@@ -123,6 +123,7 @@ namespace RecipeAppGUI
             IngredientFoodGroup = string.Empty;
         }
 
+        //adding of each step individually
 
         private void AddStepButton_Click(object sender, RoutedEventArgs e)
         {
