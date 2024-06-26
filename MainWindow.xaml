@@ -80,6 +80,7 @@
         <!-- Details of the recipe -->
         <ScrollViewer Grid.Row="1" Grid.ColumnSpan="2" Margin="10">
             <TextBlock x:Name="RecipeDetailsTextBlock" TextWrapping="Wrap" Background="White" Opacity="0.8"/>
+            
         </ScrollViewer>
     </Grid>
 </Window>
