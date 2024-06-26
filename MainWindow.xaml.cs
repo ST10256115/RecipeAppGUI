@@ -28,7 +28,7 @@ namespace RecipeAppGUI
         private string _stepDescription;
 
         public event PropertyChangedEventHandler PropertyChanged;
-
+        //event handler created manually
         public string RecipeName
         {
             get { return _recipeName; }
