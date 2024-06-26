@@ -12,7 +12,7 @@ using System.Windows.Shapes;
 
 namespace RecipeAppGUI
 {
-
+    //all processes for each button are under each button
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
         private List<Recipe> _recipes;
