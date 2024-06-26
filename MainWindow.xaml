@@ -14,7 +14,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-      
+      <!-- inputting recipe-->
         <StackPanel Grid.Row="0" Grid.Column="0" Margin="10">
             <TextBlock Text="Enter New Recipe" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
 
