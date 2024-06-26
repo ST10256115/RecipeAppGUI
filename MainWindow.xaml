@@ -50,7 +50,7 @@
             <Button Content="Save Recipe" Width="200" Margin="0,10,0,0" Click="SaveRecipeButton_Click"/>
         </StackPanel>
 
-        <!-- Recipe Display and Filter Section -->
+        <!-- Recipe Filtering -->
         <StackPanel Grid.Row="0" Grid.Column="1" Margin="10">
             <TextBlock Text="Recipe Filter" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
 
